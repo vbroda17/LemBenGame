@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpcaqomkbn87h"]
+
+[ext_resource type="PackedScene" uid="uid://cm2ikgxfq8cqt" path="res://models/vMain/v.main.low.newblend2.glb" id="1_70saf"]
+
+[node name="v_main_low_newblend2" instance=ExtResource("1_70saf")]

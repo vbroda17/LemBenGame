@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxulkela436jm"]
+
+[ext_resource type="PackedScene" uid="uid://c32yoly1031md" path="res://model/character/low.base.glb" id="1_p7apm"]
+[ext_resource type="Script" uid="uid://1iac1qvakc05" path="res://model/character/Player.gd" id="2_85bdm"]
+
+[node name="low_base" instance=ExtResource("1_p7apm")]
+script = ExtResource("2_85bdm")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." index="2"]

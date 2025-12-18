@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://csquo88wmh621"]
+
+[ext_resource type="PackedScene" uid="uid://cm2ikgxfq8cqt" path="res://models/vMain/v.main.low.newblend2.glb" id="1_upupu"]
+
+[node name="VMain" type="Node3D"]
+
+[node name="v_main_low_newblend2" parent="." instance=ExtResource("1_upupu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1304754, 0, -0.522249)

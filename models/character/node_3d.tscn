@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpm4bteduf2tp"]
+
+[ext_resource type="PackedScene" uid="uid://dq2a82rokaguq" path="res://stage.tscn" id="1_boxnp"]
+[ext_resource type="PackedScene" uid="uid://dc1bb300gshcp" path="res://models/character/player_3d.tscn" id="2_80eyc"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="stage" parent="." instance=ExtResource("1_boxnp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.65104866, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="stage"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 31.535448, 26.731293)
+light_color = Color(1, 1, 0.10980392, 1)
+light_energy = 7.463
+omni_range = 358.724
+
+[node name="Player3D" parent="." instance=ExtResource("2_80eyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4666576, 0)

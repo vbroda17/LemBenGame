@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq2a82rokaguq"]
+
+[ext_resource type="PackedScene" uid="uid://c32yoly1031md" path="res://model/character/low.base.glb" id="1_aees8"]
+[ext_resource type="Script" uid="uid://b21ioqxwmt55c" path="res://model/character/low.base.gd" id="2_rnkuw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx6sy"]
+albedo_color = Color(0.101960786, 0.13725491, 0.2, 1)
+
+[node name="stage" type="Node3D"]
+
+[node name="Floor" type="Node3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Floor"]
+use_collision = true
+radius = 100.0
+material = SubResource("StandardMaterial3D_gx6sy")
+
+[node name="Sides" type="Node3D" parent="."]
+
+[node name="Obsticals" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 30, 95)
+
+[node name="low_base" parent="." instance=ExtResource("1_aees8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6270137, 1, 5.4709883)
+script = ExtResource("2_rnkuw")
